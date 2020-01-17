@@ -1,0 +1,20 @@
+<br>
+<div class="container-fluid">
+  <form (ngSubmit)="onSubmit()">  
+    <div class="container">
+      <h2 class="header">Signup</h2>
+      <br>
+      <input type="text" class="form-control input-lg" placeholder="First Name" name="firstname" [(ngModel)]="firstname" />
+      <br>
+      <input type="text" class="form-control input-lg" placeholder="Last Name" name="lastname" [(ngModel)]="lastname"/>
+      <br>
+      <input type="email" class="form-control input-lg" placeholder="Email" name="email" [(ngModel)]="email"/>
+      <br>
+      <input type="password" class="form-control input-lg" placeholder="Password" name="password" [(ngModel)]="password" />
+      <br>
+      <button class="btn btn-primary btn-block">Submit</button>
+      <br>
+      <h3 style="text-align:center;color:#3f2726">Already have an account? <a routerLink="/login">login</a> </h3>
+    </div>
+  </form>
+</div>
